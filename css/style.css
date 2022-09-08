@@ -1,126 +1,119 @@
 body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 img {
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
 }
 
 h2 {
-    position: relative;
-    top: 25vh;
-    font-size: 100px;
+  position: relative;
+  top: 25vh;
+  font-size: 100px;
 }
 
-#login-form input, #todo-form input {
-    background: none;
-    border-color: rgba(0, 0, 0, 0.1);
+#login-form input,
+#todo-form input {
+  background: none;
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 #login-form {
-    position: relative;
-    top : 17vh;
+  position: relative;
+  top: 17vh;
 }
 
 #login-form input {
-    width: 280px;
-    height: 40px;
-    font-size: 30px;
-    text-align: center;
-    border-top : rgba(0, 0, 0, 0.00001);
-    border-left : rgba(0, 0, 0, 0.00001);
-    border-right : rgba(0, 0, 0, 0.00001);
-    color: rgba(255, 255, 255, 0.705);
+  width: 280px;
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+  border-top: rgba(0, 0, 0, 0.00001);
+  border-left: rgba(0, 0, 0, 0.00001);
+  border-right: rgba(0, 0, 0, 0.00001);
+  color: rgba(255, 255, 255, 0.705);
 }
 
 #login-form input::placeholder {
-    font-weight: 500;
-    color: rgba(19, 18, 18, 0.8);
+  font-weight: 500;
+  color: rgba(19, 18, 18, 0.8);
 }
 
 #login-form button {
-    background-color: rgba(0, 0, 0, 0.00001);
-    border-color: rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    height: 46px;
-    position: relative;
-    left: 20px;
-    color: rgba(0, 0, 0, 0.705);
+  background-color: rgba(0, 0, 0, 0.00001);
+  border-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  height: 46px;
+  position: relative;
+  left: 20px;
+  color: rgba(0, 0, 0, 0.705);
 }
 
 #todo-form {
-    position: relative;
-    top: 18vh;
-    display : flex;
-    justify-content: center;
+  position: relative;
+  top: 18vh;
+  display: flex;
+  justify-content: center;
 }
 
 #todo-form input {
-    width: 300px;
-    height: 20px;
-    text-align: center;
-    font-size: 17px;
+  width: 300px;
+  height: 20px;
+  text-align: center;
+  font-size: 17px;
 }
 
 #todo-form input::placeholder {
-    font-weight: 500;
-    color: rgba(19, 18, 18, 0.8);
+  font-weight: 500;
+  color: rgba(19, 18, 18, 0.8);
 }
 
 #quote {
-    position: relative;
-    top: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  position: relative;
+  top: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: min-content;
 }
 
-#quote span{
-    font-weight: 200;
-    font-size: 17px;
-    color: aliceblue;
+#quote span {
+  font-weight: 200;
+  font-size: 17px;
+  color: aliceblue;
 }
-
 
 #greeting {
-    position: relative;
-    top: 13vh;
-    font-size: 30px;
+  position: relative;
+  top: 13vh;
+  font-size: 30px;
 }
 
 #weather {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    bottom: 430px;
-    left: 830px;
-    color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 430px;
+  left: 830px;
+  color: aliceblue;
 }
 
-#weather span{
-    font-size: 20px;
+#weather span {
+  font-size: 20px;
 }
 
 #weather span:first-child {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
-
-
-
-
-
-
-
-
 .hidden {
-    display: none;
+  display: none;
 }
