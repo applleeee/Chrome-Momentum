@@ -1,6 +1,5 @@
-import { config } from "./apiKey.js";
+const API_KEY = "436aba4730244999bbdaedb26f688c7f";
 
-const API_KEY = config.weatherKey;
 function Goe(position) {
   const lat = position.coords.latitude;
   const lng = position.coords.longitude;
