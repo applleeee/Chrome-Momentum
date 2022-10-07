@@ -1,7 +1,6 @@
-import { config } from "./apiKey";
+import { config } from "./apiKey.js";
 
 const API_KEY = config.weatherKey;
-
 function Goe(position) {
   const lat = position.coords.latitude;
   const lng = position.coords.longitude;
@@ -9,10 +8,12 @@ function Goe(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const weather = document.querySelector("#weather span:first-child");
+      const temp = document.querySelector("#weather span:first-child");
+      const weather = document.querySelector("#weather span:nth-child(2)");
       const city = document.querySelector("#weather span:last-child");
-      city.innerText = data.name;
+      temp.innerText = `${Math.ceil(data.main.temp)}℃`;
       weather.innerText = data.weather[0].main;
+      city.innerText = data.name;
     });
 }
 

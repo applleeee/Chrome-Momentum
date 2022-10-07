@@ -14,50 +14,54 @@ img {
 
 h2 {
   position: relative;
-  top: 25vh;
-  font-size: 100px;
+  top: 20vh;
+  font-size: 5em;
+  color: white;
 }
 
 #login-form input,
 #todo-form input {
-  background: none;
-  border-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(21, 21, 19, 0.815);
+  border: 2px solid rgba(156, 152, 152, 0.705);
+  border-radius: 5px;
 }
 
 #login-form {
   position: relative;
-  top: 17vh;
+  top: 18vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #login-form input {
-  width: 280px;
+  width: 20%;
+  min-width: 300px;
   height: 40px;
   font-size: 30px;
   text-align: center;
-  border-top: rgba(0, 0, 0, 0.00001);
-  border-left: rgba(0, 0, 0, 0.00001);
-  border-right: rgba(0, 0, 0, 0.00001);
   color: rgba(255, 255, 255, 0.705);
 }
 
 #login-form input::placeholder {
   font-weight: 500;
-  color: rgba(19, 18, 18, 0.8);
+  color: rgba(222, 215, 215, 0.8);
 }
 
 #login-form button {
-  background-color: rgba(0, 0, 0, 0.00001);
+  background: rgba(219, 219, 211, 0.815);
   border-color: rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   height: 46px;
   position: relative;
   left: 20px;
   color: rgba(0, 0, 0, 0.705);
+  font-weight: 700;
 }
 
 #todo-form {
   position: relative;
-  top: 18vh;
+  top: 20vh;
   display: flex;
   justify-content: center;
 }
@@ -67,16 +71,44 @@ h2 {
   height: 20px;
   text-align: center;
   font-size: 17px;
+  color: white;
 }
 
 #todo-form input::placeholder {
   font-weight: 500;
-  color: rgba(19, 18, 18, 0.8);
+  color: rgba(222, 215, 215, 0.8);
+}
+
+#todo-list {
+  padding: 5px;
+  position: relative;
+  top: 21vh;
+}
+
+#todo-list li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 40vw;
+  margin-bottom: 10px;
+}
+
+#todo-list li span {
+  border-radius: 10px;
+  border: 1px solid rgba(156, 152, 152, 0.705);
+  background-color: aliceblue;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+#todo-list li button {
+  width: auto;
+  height: 30px;
 }
 
 #quote {
-  position: relative;
-  top: 45vh;
+  position: fixed;
+  bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,35 +117,26 @@ h2 {
 }
 
 #quote span {
-  font-weight: 200;
+  font-weight: 300;
   font-size: 17px;
   color: aliceblue;
+  text-align: center;
 }
 
 #greeting {
   position: relative;
-  top: 13vh;
+  top: 15vh;
   font-size: 30px;
+  color: white;
 }
 
 #weather {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  bottom: 430px;
-  left: 830px;
-  color: aliceblue;
-}
-
-#weather span {
-  font-size: 20px;
-}
-
-#weather span:first-child {
-  padding-right: 10px;
+  color: rgb(228, 225, 225);
+  position: fixed;
+  right: 1vw;
+  font-weight: 500;
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
