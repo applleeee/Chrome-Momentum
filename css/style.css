@@ -131,10 +131,10 @@ h2 {
 }
 
 #weather {
-  color: rgb(228, 225, 225);
+  color: rgb(172, 185, 58);
   position: fixed;
   right: 1vw;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .hidden {
